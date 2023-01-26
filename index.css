@@ -1,0 +1,201 @@
+/* OVDJE POČINJE DIO ZA HEADER */
+
+header {
+    position: relative;
+    background-color: black;
+    height: 60vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  header video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+  }
+  
+  header .container {
+    position: relative;
+    z-index: 2;
+  }
+  
+  header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 1;
+  }
+  
+  header h1{
+    z-index: 2;
+    font-size: 23vh;
+    color: white;
+    font-family: sans-serif;
+    position: absolute;
+    font-weight: bold;
+    margin-top: 35vh;
+    margin-left: 2%;
+  }
+
+
+
+  /* Media Query for devices withi coarse pointers and no hover functionality */
+  
+  /* This will use a fallback image instead of a video for devices that commonly do not support the HTML5 video element */
+  
+  @media (pointer: coarse) and (hover: none) {
+    header {
+      background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+    }
+  
+    header video {
+      display: none;
+    }
+  }
+
+/*OVDJE JE DIO ZA NAVBAR*/
+
+  #navbar {
+    position: absolute;
+    z-index: 1;
+    font-family: sans-serif;
+    font-size: 20px;
+    margin-top: 10px;
+
+  }
+
+  #navbar li{
+      display: inline;
+      margin-right: 3rem;
+    }
+
+  ul{
+    list-style-type: none;
+  }
+
+  #navbar a{
+    text-decoration: none;
+    color: white;
+  }
+
+
+  /* OVDJE ZAVRŠAVA DIO ZA HEADER */
+
+
+
+/* OVDJE POČINJE DIO ZA FOOTER */
+
+  body{
+    margin:0;
+    overflow-x:hidden;
+    }
+    
+    .footer{
+    background:#000;
+    padding:30px 0px;
+    font-family: 'Play', sans-serif;
+    text-align:center;
+    margin-top: 10rem;
+    }
+    
+    .footer .row{
+    width:100%;
+    margin:1% 0%;
+    padding:0.6% 0%;
+    color:gray;
+    font-size:0.8em;
+    }
+    
+    .footer .row a{
+    text-decoration:none;
+    color:gray;
+    transition:0.5s;
+    }
+    
+    .footer .row a:hover{
+    color:#fff;
+    }
+    
+    .footer .row ul{
+    width:100%;
+    }
+    
+    .footer .row ul li{
+    display:inline-block;
+    margin:0px 30px;
+    }
+    
+    .footer .row a i{
+    font-size:2em;
+    margin:0% 1%;
+    }
+    
+    @media (max-width:720px){
+    .footer{
+    text-align:left;
+    padding:5%;
+    }
+    .footer .row ul li{
+    display:block;
+    margin:10px 0px;
+    text-align:left;
+    }
+    .footer .row a i{
+    margin:0% 3%;
+    }
+    }
+
+    /* OVDJE ZAVRŠAVA DIO ZA FOOTER I OVDJE ZAVRŠAVA DIO KOJI SE NALAZI NA SVAKOJ STRANICI*/
+
+
+    .container{
+      margin-top: 10rem;
+    }
+
+    .card{
+      height: 37rem;
+    }
+
+    .button{
+      background-color: black;
+      border: black;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      letter-spacing: -1px;
+      font-weight: bolder;
+      padding: 20px;
+      font-size:40px;
+      border-radius: 0;
+      border: black 2px solid ;
+      text-align: center;
+      text-decoration: none;
+      color: white;
+    }
+
+    .button:hover{
+      background-color:rgb(255, 255, 255);
+      border: black 2px solid ;
+      color: black;
+      text-align: center;
+      text-decoration: none;
+    }
+
+    .card-img-top {
+      object-fit: cover;
+    }
+
+
+
